@@ -1,7 +1,6 @@
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
 	def facebook
-		puts 222222222222222
 		@user = User.from_omniauth_facebook(request.env["omniauth.auth"])
 	    if @user.persisted?
 	      flash.notice = "Signed in Through Facebook!"
@@ -14,7 +13,6 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 	end
 
 	def twitter
-		p 33333333333333
         @user = User.from_omniauth_twitter(request.env["omniauth.auth"])
 	    if @user.persisted?
 	      flash.notice = "Signed in Through twitter!"

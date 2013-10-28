@@ -46,8 +46,6 @@ class User
  #ominiauth authandication
   def self.from_omniauth_facebook(auth)
     
-    # data = auth.extra.raw_info
-    #  data.email='fake'+auth.uid+'@donarleague.com' if data.email.blank?
       where(auth.slice(:provider, :uid)).first_or_create do |user|
         user.provider = auth.provider
         user.uid = auth.uid

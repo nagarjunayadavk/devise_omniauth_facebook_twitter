@@ -1,3 +1,5 @@
-== 
+== Devise+ominiauth
 
-This application is Devise with omniauth facebook and omniauth twitter
+
+
+This application is Developed in mongoid  and Devise with omniauth facebook and omniauth twitter 
