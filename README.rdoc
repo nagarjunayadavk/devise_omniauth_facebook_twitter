@@ -1,0 +1,3 @@
+== 
+
+This application is Devise with omniauth facebook and omniauth twitter
